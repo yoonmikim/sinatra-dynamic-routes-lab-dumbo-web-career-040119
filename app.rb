@@ -26,7 +26,7 @@ class App < Sinatra::Base
     case operation
     when 'add'
       ((params[:number1].to_i) + (params[:number2].to_i)).to_s
-    when 'substract'
+    when 'subtract'
       ((params[:number1].to_i) - (params[:number2].to_i)).to_s
     when 'multiply'
       ((params[:number1].to_i) * (params[:number2].to_i)).to_s
