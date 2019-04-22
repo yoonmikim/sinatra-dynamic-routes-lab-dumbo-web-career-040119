@@ -36,5 +36,5 @@ class App < Sinatra::Base
       "Unable to perform this operation"
     end
   end
-  
+
 end
