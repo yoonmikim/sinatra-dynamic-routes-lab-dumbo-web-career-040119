@@ -33,7 +33,7 @@ class App < Sinatra::Base
     when 'divide'
       (params[:number1].to_i) / (params[:number2].to_i)
     else 
-      
+      "Unable to perform this operation"
     end
   end
   
