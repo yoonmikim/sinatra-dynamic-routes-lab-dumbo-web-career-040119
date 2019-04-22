@@ -25,13 +25,13 @@ class App < Sinatra::Base
     operation = params[:operation]
     case operation
     when 'add'
-      (params[:number1].to_i) + (params[:number2].to_i)
+      ((params[:number1].to_i) + (params[:number2].to_i)).to_s
     when 'substract'
-      (params[:number1].to_i) - (params[:number2].to_i)
+      ((params[:number1].to_i) - (params[:number2].to_i)).to_s
     when 'multiply'
-      (params[:number1].to_i) * (params[:number2].to_i)
+      ((params[:number1].to_i) * (params[:number2].to_i)).to_s
     when 'divide'
-      (params[:number1].to_i) / (params[:number2].to_i)
+      ((params[:number1].to_i) / (params[:number2].to_i)).to_s
     else 
       "Unable to perform this operation"
     end
